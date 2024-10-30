@@ -1,0 +1,13 @@
+RewriteEngine On
+
+ErrorDocument 401 /restrict.html
+ErrorDocument 402 /restrict.html
+ErrorDocument 403 /restrict.html
+ErrorDocument 404 /restrict.html
+ErrorDocument 500 /restrict.html
+
+# Condition:  Request filename doesn't end with .css, .js, or other specified extensions
+RewriteCond %{REQUEST_FILENAME} !\.(css|js|jpg|jpeg|png|gif|svg|pdf)$ [NC] 
+
+# Rule: If the condition is met, rewrite all .php requests to test.html
+RewriteRule ^(.+\.php)$ /restrict.html [L] 

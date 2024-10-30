@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-page.click</title>
+    <script async src="http://web-page.click//web/client/@material/TEMP-shared.js"></script>
+    <link rel="stylesheet" href="http://web-page.click//web/client/material/colors.css" />
+    <link rel="stylesheet" href="http://web-page.click//web/client/material/theme.css" />
+    <script async src="http://web-page.click/web/client/material/colors.js"></script>
+    <link rel="stylesheet" href="http://web-page.click/web/client/material/icons.css" />
+    <link rel="stylesheet" href="http://web-page.click/web/client/material/font.css" />
+
+    <style>
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body class="flex" style="min-height: 100vh;">
+
+    <div>
+
+        <md-icon
+            style="margin: 18px; margin-bottom: 6px;--size: 48px; font-size: var(--size); width: var(--size); height: var(--size);">waving_hand</md-icon>
+
+        <h1 style="margin-left: 18px; margin-right: 18px;">Welcome to the <b style="color: var(--md-sys-color-primary);">web-page.click</b> domain!</h1>
+        <br />
+        <text style="display: block; margin-left: 18px; margin-right: 18px;">Currently, registration is disabled! Please, visit us later!</text>
+
+
+    </div>
+
+    <md-divider inset style=" width: 60%; margin: 5vh auto;"></md-divider>
+
+    <div>
+
+        <md-text-button trailing-icon onclick="window.open('https://sites.ender.ing/')" style="margin: auto 4px">
+            Ender Sites
+            <md-icon slot="icon">open_in_new</md-icon>
+        </md-text-button>
+
+        <md-outlined-button role="presentation" onclick="window.open('mailto:admin@ender.ing')"
+            style="margin: auto 4px">
+            Contact Admin
+            <md-icon slot="icon">mail</md-icon>
+        </md-outlined-button>
+
+    </div>
+</body>
+
+</html>
